@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("Fonts/coolvetica\ rg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Monsterrat";
+  src: url("Fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonsterratLight";
+  src: url("Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-color: rgb(0, 0, 5);
+    margin: 0;
+    padding: 0;
+}
+
+#InfoContainer {
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#AboutContainer {
+    height: 100vh; /* 95vh if spin */
+    width: 100vw;
+    margin-top: 0vh; /* 5vh if spin */
+}
+
+#AcademicsContainer {
+    height: 100vh; /* 95vh if spin */
+    width: 100vw;
+    margin-top: 0vh; /* 5vh if spin */
+}
+
+#FutureContainer {
+    height: 100vh; /* 95vh if spin */
+    width: 100vw;
+    margin-top: 0vh; /* 5vh if spin */
+}
+
+#AdviceContainer {
+    height: 100vh; /* 95vh if spin */
+    width: 100vw;
+    margin-top: 0vh; /* 5vh if spin */
+}
+
+#EndContainer {
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0vh;
+}
+
+
+#Container {
+  width: 50vw;
+  height: 20vh;
+  align-content: center;
+  margin: auto;
+  background-color: rgb(0, 0, 5);
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+#Container::after, #Container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(from var(--angle), rgb(255, 255, 255), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(255, 255, 255));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 0.2rem;
+  animation: 3s spin linear infinite;
+}
+
+#Container::before {
+  filter: blur(2rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+#Name {
+    color: rgb(255, 255, 255);
+    font-family: 'Monsterrat', 'sans-serif';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+#Listening {
+    color: rgb(255, 255, 255);
+    font-family: 'Monsterrat', 'sans-serif';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.IntroductoryText {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 5);
+    font-family: 'Monsterrat', 'sans-serif';
+    text-align: center;
+    display: flex;
+    font-size: 5rem;
+    position: relative;
+    width: 60rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem; /* 0 if spin */
+}
+
+#Tag {
+    color: rgb(255, 255, 255);
+    font-family: 'MonsterratLight', 'sans-serif';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#Questions {
+    color: rgb(255, 255, 255);
+    font-family: 'MonsterratLight', 'sans-serif';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#TopBar {
+  width: 35vw;
+  height: 5vh;
+  margin: auto;
+  margin-bottom: -5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.TopButton {
+    color: rgb(255, 255, 255);
+    font-family: 'MonsterratLight', 'sans-serif';
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.TopButton:hover {
+  /* 
+  font-family: 'Monsterrat', 'sans-serif';
+  text-shadow: 1px 0 32px white;
+  */
+
+  text-shadow: 1px 1px 4px white;
+
+  cursor: pointer;
+}
+
+.Container {
+  background-color: rgb(0, 0, 5);
+  width: 75vw;
+  height: 80vh;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+.Subtext {
+    color: rgb(255, 255, 255);
+    font-family: 'MonsterratLight', 'sans-serif';
+    text-align: left;
+    display: flex;
+    font-size: 3rem;
+    background-color: rgb(0, 0, 5);
+    outline: none;
+    border: none;
+    filter: blur(1rem);
+    transition: filter 0.5s ease;
+    width: 50vw;
+}
+
+.Subtext2 {
+    color: rgb(255, 255, 255);
+    font-family: 'MonsterratLight', 'sans-serif';
+    text-align: left;
+    display: flex;
+    font-size: 3rem;
+    background-color: rgb(0, 0, 5);
+    outline: none;
+    border: none;
+    filter: blur(1rem);
+    transition: filter 0.5s ease;
+    width: 100%;
+}
+
+.Img {
+    filter: blur(1rem);
+    transition: filter 0.5s ease;
+    border: .1rem solid white;
+}
+
+.Img:hover {
+  cursor: pointer;
+}
+
+#BCS {
+  height: 40rem;
+  width: auto;
+  float: right;
+  margin-top: 0.5rem;
+}
+
+.LargeSubtext {
+    color: rgb(255, 255, 255);
+    font-family: 'Monsterrat', 'sans-serif';
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 1rem;
+    font-size: 4rem;
+}
+
+#Subjects {
+  margin-top: -2rem;
+}
+
+#Reflection {
+  margin-top: 2rem;
+}
+
+/* @property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+#About::after, #About::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(from var(--angle), rgb(255, 255, 255), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(0, 0, 5), rgb(255, 255, 255));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 0.2rem;
+  animation: 3s spin linear infinite;
+  
+}
+
+#About::before {
+  filter: blur(2rem);
+  opacity: 0.5;
+} */

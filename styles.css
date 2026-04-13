@@ -163,7 +163,7 @@ body {
 }
 
 #TopBar {
-  width: 40vw;
+  width: 45vw;
   height: 5vh;
   margin: auto;
   margin-bottom: -5vh;
@@ -247,7 +247,7 @@ body {
   height: 35rem;
   width: auto;
   float: right;
-  margin-top: 0.5rem;
+  margin-top: 0rem;
 }
 
 .LargeSubtext {

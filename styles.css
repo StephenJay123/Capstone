@@ -37,6 +37,12 @@ body {
     margin-top: 0vh; /* 5vh if spin */
 }
 
+#ExperiencesContainer {
+  height: 100vh; /* 95vh if spin */
+  width: 100vw;
+  margin-top: 0vh; /* 5vh if spin */
+}
+
 #AcademicsContainer {
     height: 100vh; /* 95vh if spin */
     width: 100vw;
@@ -163,7 +169,7 @@ body {
 }
 
 #TopBar {
-  width: 45vw;
+  width: 55vw;
   height: 5vh;
   margin: auto;
   margin-bottom: -5vh;

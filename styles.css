@@ -174,7 +174,7 @@ body {
   margin: auto;
   margin-bottom: -5vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;

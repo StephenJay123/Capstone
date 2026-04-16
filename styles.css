@@ -250,9 +250,11 @@ body {
 }
 
 #BCS {
-  height: 35rem;
+  height: 40rem;
   width: auto;
   float: right;
+  position: absolute;
+  margin-left: 65rem;
   margin-top: 0rem;
 }
 

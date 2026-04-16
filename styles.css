@@ -169,13 +169,14 @@ body {
 }
 
 #TopBar {
-  width: 55vw;
+  width: 100vw;
   height: 5vh;
   margin: auto;
   margin-bottom: -5vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -250,12 +251,10 @@ body {
 }
 
 #BCS {
-  height: 40rem;
-  width: auto;
-  float: right;
   position: absolute;
-  margin-left: 65rem;
-  margin-top: 0rem;
+  right: 5vw;
+  height: 60vh;
+  width: auto;
 }
 
 .LargeSubtext {
